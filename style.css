@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto+Condensed&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+*{
+    margin : 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    color: grey;
+}
+#header{
+    width : 100%;
+    height :10vh;
+    padding : 20px;
+    margin-bottom : 20px;
+    background-size : 100% 100vh;
+    background-position : center;
+}
+.container{
+    padding : 10px 10%;
+}
+
+nav{
+    display : flex;
+    align-items : center;
+    justify-content: space-between;
+    flex-wrap : wrap;
+}
+
+.title{
+    width : 100px;
+    font-size : 35px;
+}
+
+.title span{
+    color : orange;
+}
+nav ul li{
+    display : inline-block;
+    margin : 10px 20px;
+}
+nav ul li a{
+    text-decoration : none;
+    color : #333;
+    position : relative;
+}
+nav ul li a:hover{
+    width : 100%;
+    color : orangered;
+}
+
+.slider{
+    width : 100%;
+    height : 95vh;
+    position : relative;
+}
+.list{
+    position : absolute;
+    top : 0;
+    left : 0;
+    display : flex;
+    height : 100%;
+}
+.text{
+    padding : 50px 0;
+    margin-left : 500px; 
+}
+
+.slide-btn{
+    position : absolute;
+    top : 45%;
+    left : 5%;
+    width : 90%;
+    display : flex;
+    justify-content: space-between;
+}
+
+.slide-btn button{
+    width : 30px;
+    height : 30px;
+    border-radius : 50%;
+    background-color : #fff5;
+    color: #fff;
+    border : none;
+    font-family : monospace;
+    font-weight: bold;
+}
+.slider-nav{
+    display : flex;
+    column-gap: 0.5rem;
+    position :absolute;
+    bottom :3rem ;
+    left : 50%;
+    transform : translateX(-50%);
+}
+
+.slider-nav a {
+    width : 0.5rem;
+    height : 0.5rem;
+    border-radius: 50%;
+    background-color : grey;
+    opacity : 0.75;
+    transition : opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity : 1;
+    background-color: orangered;
+}
+.dots{
+    position : absolute;
+    bottom : 0px;
+    color : grey;
+    left : 0;
+    width : 100%;
+    margin : 0;
+    padding : 0;
+    display : flex;
+    justify-content: center;
+}
+
+.dots li{
+    list-style :  none;
+    width : 10px;
+    height : 10px;
+    background-color: grey;
+    margin : 20px;
+    border-radius: 20px;
+}
+
+#services{
+    padding: 30px 0;
+}
+
+ .sub-title1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size : 20px;
+    margin-bottom : 10px;
+}
+.sub-title2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size : 30px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: white;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+.services-list p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-left : 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-left : 40px;
+    display : inline-block;
+    background-color: orangered;
+    max-width : 100%;
+    border-radius: 50%;
+    padding :25px;
+}
+
+#features{
+    width : 100%;
+    padding : 30px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom : 15px;
+}
+
+.feature span{
+    margin-bottom : 15px;
+    font-size : 30px;
+}
+
+.sub-feature{
+ display : flex;
+ padding : 50px;
+ margin-top:20px;
+}
+.sub-feature .f1{
+    display : flex;
+}
+
+.sub-feature .f1{
+    background: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+.sub-feature div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top : 20px;
+    margin-right: 20px;
+    display : inline-block;
+    background-color: orangered;
+    max-width : 100%;
+    border-radius: 50%;
+    padding :10px;
+}
+.p1{
+   font-size : 20px;
+   color: #333;
+}
+.sub-feature p{
+    font-size: 15px;
+    font-weight: 100;
+    margin-top : 20px;
+}
+#button{
+    background : orangered;
+    color : white;
+}
+#button .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom : 15px;
+    padding : 50px;
+}
+.custum1{
+    font-size : 25px;
+    margin-top : 30px;
+}
+.custum2{
+    margin : 30px;
+}
+.btn{
+    width : 150px;
+    height : 20px;
+    border-radius : 10px;
+}
+
+#about{
+    padding: 50px 0;
+}
+.name{
+    margin-top : 20px;
+    color : #333;
+}
+.about-image{
+    border-radius : 20px;
+}
+.custom{
+    font-size : 5px;
+}
+ .about1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size : 20px;
+    margin-bottom : 10px;
+}
+.about2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size : 30px;
+}
+.about-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.about-list div{
+    background: white;
+    
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.about-list p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-left : 15px;
+}
+
+/*-----------------------------contact---------------*/
+#contact{
+    padding: 20px 0;
+    background : grey;
+    color : white;
+}
+
+.multi p{
+   margin-top: 30px;
+}
+.recent p{
+    border-bottom : 2px solid white;
+    padding-top: 15px;
+    padding-bottom : 15px;
+}
+.social-icons{
+    margin-top: 30px;
+    
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 12.5px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: orangered;
+    transform: translatey(-5px);
+}
+#contact .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.recent p {
+    margin-top : 15px;
+    margin-bottom : 15px;
+}
+
+.contact-info p{
+  border-bottom : 2px solid white;
+  padding-top : 15px;
+  padding-bottom : 15px;
+ 
+}
+
+/*---------------Footer-----------------------*/
+#footer{
+    width : 100%;
+    height :10vh;
+    padding : 10px;
+    background: black;
+    background-size : 100% 100vh;
+    background-position : center;
+}
+.copyright{
+    padding : 10px 10%;
+}
+
+nav{
+    display : flex;
+    align-items : center;
+    justify-content: space-between;
+    flex-wrap : wrap;
+}
+nav ul li{
+    display : inline-block;
+    margin : 10px 10px;
+}
+nav ul li a{
+    font-size : 15px;
+    text-decoration : none;
+    color : grey;
+    position : relative;
+}
+nav ul li a:hover{
+    width : 100%;
+    color : orangered;
+}
